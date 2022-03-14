@@ -1,0 +1,83 @@
+.container {
+  display: grid;
+  grid-template-columns: (3, 1fr);
+  grid-template-rows: (3, 1fr);
+  grid-template-areas:
+    "green green green"
+    "yellow red blue"
+    "orange orange blue";
+}
+
+#green {
+  grid-area: green;
+}
+
+#yellow {
+  grid-area: yellow;
+}
+
+#red {
+  grid-area: red;
+}
+
+#blue {
+  grid-area: blue;
+}
+
+#orange {
+  grid-area: orange;
+}
+
+/* INSIDE YELLOW */
+
+.ulyellow {
+  display: grid;
+  grid-template-columns: (2, 1fr);
+  grid-template-rows: (2, 1fr);
+  grid-template-areas:
+    "one two"
+    "three four";
+}
+
+#one {
+  grid-area: one;
+}
+
+#two {
+  grid-area: two;
+}
+
+#three {
+  grid-area: three;
+}
+
+#four {
+  grid-area: four;
+}
+
+/* INSIDE RED */
+
+.ulred {
+  display: grid;
+  grid-template-columns: (2, 1fr);
+  grid-template-rows: (2, 1fr);
+  grid-template-areas:
+    "a b"
+    "c d";
+}
+
+#a {
+  grid-area: a;
+}
+
+#b {
+  grid-area: b;
+}
+
+#c {
+  grid-area: c;
+}
+
+#d {
+  grid-area: d;
+}
